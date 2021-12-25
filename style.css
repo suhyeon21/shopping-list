@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  text-align: center;
+  background-color: lightgray;
+}
+.list {
+  width: 400px;
+  margin: auto;
+  padding: 0;
+  background-color: #fff;
+  border-radius: 20px;
+  overflow-y: auto; /*넘치면 스크롤바*/
+  text-align: center;
+}
+header {
+  background: rgba(237, 193, 211);
+
+  background: linear-gradient(
+    166deg,
+    rgba(237, 193, 211, 1) 0%,
+    rgba(219, 192, 216, 1) 35%,
+    rgba(127, 188, 242, 1) 100%
+  );
+
+  height: 50px;
+  border-radius: 20px 20px 0 0;
+  font-size: 30px;
+  color: white;
+}
+
+.items {
+  height: 400px;
+  list-style: none;
+  padding: 0;
+  margin: 20px 40px;
+  font-size: 20px;
+}
+.item {
+  display: flex;
+  justify-content: space-between;
+}
+header {
+  text-align: center;
+}
+.remove_button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 20px;
+}
+.footer_button {
+  background-color: black;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  color: white;
+  font-size: 25px;
+}
+.items_divider {
+  width: 100%;
+  height: 1px;
+  background-color: lightgray;
+  margin-top: 10px;
+}
+.footer_input {
+  width: 100%;
+  height: 40px;
+
+  border: none;
+  outline: none;
+  font-size: 20px;
+  padding: 10px 20px;
+}
+
+footer {
+  height: 90px;
+  background: rgba(237, 193, 211);
+
+  background: linear-gradient(
+    166deg,
+    rgba(237, 193, 211, 1) 0%,
+    rgba(219, 192, 216, 1) 35%,
+    rgba(127, 188, 242, 1) 100%
+  );
+
+  border-radius: 20px;
+}
