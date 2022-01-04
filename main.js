@@ -54,7 +54,13 @@ function createItem(text) {
 
 plus.addEventListener("click", onAdd);
 
-input.addEventListener("keypress", (event) => {
+input.addEventListener("keydown", (event) => {
+  //keypress는 지원이 중단된 함수라서 keydown으로 변경
+  if (event.isComposing) {
+    //한글의 경우 오류가 발생해서 글자가 만들어지는 중인지 확인하는 코드 넣음, 그냥 keyup 사용해도 됨
+    return;
+  }
+
   if (event.key === "Enter") {
     onAdd();
   }
